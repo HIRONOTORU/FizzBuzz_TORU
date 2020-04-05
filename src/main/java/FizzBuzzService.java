@@ -1,16 +1,13 @@
 public class FizzBuzzService {
-
-
-    public String execute(int index){
-
-        if(index % 15 ==0) {
+    public String doing(int index){
+        if(  IS.FizzBuzz(index) ) {
             return "FizzBuzz";
-        }else if(index % 3 ==0){
+        } else if( IS.Fizz(index) ) {
             return "Fizz";
-        }
-        else if(index % 5 ==0){
+        } else if( IS.Buzz(index) ) {
             return "Buzz";
+        } else {
+            return String.valueOf(index);
         }
-        return String.valueOf(index);
     }
 }
